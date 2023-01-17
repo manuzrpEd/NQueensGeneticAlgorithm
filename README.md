@@ -135,4 +135,43 @@ else:
     dimension = args.dimension
 ```
 
-The above two examples show that we have used appropriate spacing for indentation, limiting lines to a maximum number of characters, using meaningful variable and function names, explaining functions, appropriate use of Python data structures, error checking, exception handling etc. Adhering to PEP 8 can make code more readable and consistent, and can help reduce the number of errors in code.
+The above two examples show that we have used appropriate spacing for indentation, limiting lines to a maximum number of characters, using meaningful variable and function names, explaining functions, appropriate use of Python data structures, error checking, exception handling etc. Adhering to PEP 8 can make the code more readable and consistent, and can help reduce the number of errors in the code.
+
+ ## Reproducibility
+ 
+ Run from the command line the following code to install all the dependencies of this repo:
+ 
+```
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Requirements
+
+* Python 3.9+
+
+### Execution
+
+* Run the program with the `help` flag to see available options:
+
+```
+python GeneticAlgorithm.py --help
+```
+
+* Run the program with the `help` flag to see available options:
+
+```
+python GeneticAlgorithm.py
+python SteepestAscentHillClimb.py
+python SimulatedAnnealing.py
+python MinConflictsHeuristic.py
+```
+
+* Run the program with the arguments:
+
+```
+python GeneticAlgorithm.py -p 1000 -n 10
+python SteepestAscentHillClimb.py -n 8
+python SimulatedAnnealing.py -n 9
+python MinConflictsHeuristic.py -n 12
+```
