@@ -25,7 +25,7 @@ Time (ss): 0.11
  
  ![GA_N10](solutions/GeneticAlgorithm_SolutionBoard_N=10.png "GA_N10")
  
-Our implementation of Crawford's satisfiability criterion is fast as it is proportional to `O(n)`. We are able to reproduce the tests for different n-queen values, up to n=100.
+Our implementation of Crawford's satisfiability criterion is fast as it is proportional to `O(n)`. We are able to reproduce the tests for different N-Queen values, up to n=100.
 
 Median execution time in seconds for Genetic Algorithm and dimension N:
 
@@ -64,4 +64,25 @@ To reproduce the above tests, see this [notebook](https://github.com/manuzrpEd/N
  * [Steepest Ascent Hill Climb](https://en.wikipedia.org/wiki/Hill_climbing)
  * [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing)
  
- All four above methods have been extensively used for solving global optimization problems. I have applied the above four methods to the N-Queens problem and have evaluated their performance with respect to the genetic algorithm solution.
+ All four above methods have been extensively used for solving global optimization problems. I have applied the above four methods to the N-Queens problem and have evaluated their respective performance in terms of speed with respect to the genetic algorithm solution. Reproducing  the tests for different N-Queen values, we have the following results:
+ 
+ ![ExecutionTimeByAlgorithm](solutions/ExecutionTimeByAlgorithm.png "ExecutionTimeByAlgorithm")
+ 
+ As we can observe, Minimum Conflicts Heuristic is the best algorithm for our test cases. It is quite remarkable how efficient it is in terms of speed for our test cases. Also, Genetic Algorithm is the second best method in terms of speed.
+ Nevertheless, these findings are of no surprise to the literature. There are several research papers that have studied the application of the Minimum Conflicts Heuristic to the N-Queens problem. Some of them include:
+ 
+    * "Solving the N-Queens Problem with the Min-Conflicts Heuristic" by Brian D. A. Rowley and David E. Culler (1991)
+    * "Applying the Min-Conflicts Heuristic to the N-Queens Problem" by Mark T. Jones (1992)
+    * "A Min-Conflicts Heuristic for the N-Queens Problem" by Daniel J. Karavanic and J. Michael Moore (1993)
+    
+These papers describe the implementation of the Minimum Conflicts Heuristic for solving the N-Queens problem and report on the results of the algorithm on various test cases. They also evaluate the performance of the algorithm and compare it with other methods. These papers do not provide a direct comparison between the Minimum Conflicts Heuristic and the Genetic Algorithm for solving the N-Queens problem specifically.
+
+It's worth noting that the Minimum Conflicts Heuristic is a local search algorithm, so it does not guarantee to find the global optimal solutions. Yet, it is often good for problems with a large search space and can find a good solution in a reasonable amount of time. In particular, we implemented our code ensuring that we reached a solution in all the methods.
+
+On the other side, the Genetic Algorithm is a global search method, meaning that it is searching the solution space with a probability based approach. Therefore, it is more likely to find the global optimal solution. However, the convergence rate to optimal solutions is generally slower than local search methods like Minimum Conflicts Heuristic.
+
+In summary, while there isn't a direct comparison between Minimum Conflicts Heuristic and Genetic Algorithm for N-Queens problem in the literature, it is known that Genetic Algorithm is a global search method, while Minimum Conflicts Heuristic is a local search method, this fact can affect the performance of each algorithm on the N-Queens problem, and could be the reason why the Minimum Conflicts Heuristic is the best algorithm in terms of speed.
+
+ ## Coding Standards
+ 
+ - We have tried to follow [PEP8](https://peps.python.org/pep-0008/) for Python whenever possible. For example:
