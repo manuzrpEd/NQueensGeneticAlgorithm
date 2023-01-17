@@ -17,4 +17,6 @@ In the context of [NP](https://en.wikipedia.org/wiki/NP-completeness) problems, 
  ## Task
  
  In this [notebook](https://github.com/manuzrpEd/NQueensGeneticAlgorithm/blob/main/notebooks/Implementation_NQueen_GeneticAlgorithm-Solution.ipynb) I have developed a Python solution that represents an implementation of Crawford's evaluation based on satisfiability.
+ 
+ ![alt text](solutions/GeneticAlgorithm_SolutionBoard_N=10.png "Title")
 
