@@ -158,7 +158,7 @@ pip install -r requirements.txt
 python GeneticAlgorithm.py --help
 ```
 
-* Run the program with the `help` flag to see available options:
+* Run the program (and it will prompt you to input the number of dimensions):
 
 ```
 python GeneticAlgorithm.py
