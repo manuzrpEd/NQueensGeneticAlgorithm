@@ -85,7 +85,7 @@ In summary, while there isn't a direct comparison between Minimum Conflicts Heur
 
  ## Coding Standards
  
- - We have tried to follow [PEP8](https://peps.python.org/pep-0008/) for Python whenever possible. For example:
+ - We have tried to follow [PEP8](https://peps.python.org/pep-0008/) for Python whenever possible:
 
 ```
 # Define Genetic Chess Class
@@ -135,4 +135,4 @@ else:
     dimension = args.dimension
 ```
 
-shows that we have used appropriate spacing for indentation, limiting lines to a maximum number of characters, using meaningful variable and function names, explaining functions, appropriate use of Python data structures, error checking, exception handling etc. Adhering to PEP 8 can make code more readable and consistent, and can help reduce the number of errors in code.
+The above two examples show that we have used appropriate spacing for indentation, limiting lines to a maximum number of characters, using meaningful variable and function names, explaining functions, appropriate use of Python data structures, error checking, exception handling etc. Adhering to PEP 8 can make code more readable and consistent, and can help reduce the number of errors in code.
