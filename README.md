@@ -51,3 +51,4 @@ Average execution time in seconds for Genetic Algorithm and dimension N:
 |          70 |         29.2303    |
 |         100 |        113.844     |
 
+ ## Task - Improvement
