@@ -25,7 +25,7 @@ Time (ss): 0.11
  
  ![GA_N10](solutions/GeneticAlgorithm_SolutionBoard_N=10.png "GA_N10")
  
-Our implementation of Crawford's satisfiability criterion is fast as it is proportional to O(n). We are able to reproduce the tests for different n-queen values, up to n=100.
+Our implementation of Crawford's satisfiability criterion is fast as it is proportional to `O(n)`. We are able to reproduce the tests for different n-queen values, up to n=100.
 
 Median execution time in seconds for Genetic Algorithm and dimension N:
 
@@ -51,4 +51,17 @@ Average execution time in seconds for Genetic Algorithm and dimension N:
 |          70 |         29.2303    |
 |         100 |        113.844     |
 
+To reproduce the above tests, see this [notebook](https://github.com/manuzrpEd/NQueensGeneticAlgorithm/blob/main/notebooks/Implementation_NQueen_GeneticAlgorithm-Times.ipynb).
+
  ## Task - Improvement
+ 
+ In this section we provide the improvement that we have considered, which is that of providing a computational speed-up to reach the solution to the N-Queens problem. [Crawford (1992)](https://dl.acm.org/doi/10.1145/130069.130128) states that 'Future work in this area would include tests on other decision problems and comparisons with existing approximation techniques (on speed, convergence, % optimal, etc.)'. As such, we have chosen to perform a comparison with existing approximation techniques.
+ 
+ ### Methods
+ 
+ * [Line Beam Search](https://en.wikipedia.org/wiki/Beam_search)
+ * [Minimum Conflicts Heuristic for solving constrained satisfaction problems (CSPs)](https://en.wikipedia.org/wiki/Min-conflicts_algorithm)
+ * [Steepest Ascent Hill Climb](https://en.wikipedia.org/wiki/Hill_climbing)
+ * [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing)
+ 
+ All four above methods have been extensively used for solving global optimization problems. I have applied the above four methods to the N-Queens problem and have evaluated their performance with respect to the genetic algorithm solution.
