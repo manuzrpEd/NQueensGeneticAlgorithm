@@ -59,7 +59,7 @@ To reproduce the above tests, see this [notebook](https://github.com/manuzrpEd/N
  
  ### Methods
  
- * [Line Beam Search](https://en.wikipedia.org/wiki/Beam_search)
+ * [Light Beam Search](https://en.wikipedia.org/wiki/Beam_search)
  * [Minimum Conflicts Heuristic for solving constrained satisfaction problems (CSPs)](https://en.wikipedia.org/wiki/Min-conflicts_algorithm)
  * [Steepest Ascent Hill Climb](https://en.wikipedia.org/wiki/Hill_climbing)
  * [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing)
