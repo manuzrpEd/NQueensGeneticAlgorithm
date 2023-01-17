@@ -16,8 +16,10 @@ In the context of [NP](https://en.wikipedia.org/wiki/NP-completeness) problems, 
 
  ## Task
  
- In this [notebook](https://github.com/manuzrpEd/NQueensGeneticAlgorithm/blob/main/notebooks/Implementation_NQueen_GeneticAlgorithm-Solution.ipynb) I have developed a Python solution that represents an implementation of Crawford's evaluation based on satisfiability. For example, running the mentioned notebook and entering N=10 we get this solution 
-[8, 2, 5, 1, 9, 4, 10, 7, 3, 6].
+ In this [notebook](https://github.com/manuzrpEd/NQueensGeneticAlgorithm/blob/main/notebooks/Implementation_NQueen_GeneticAlgorithm-Solution.ipynb) I have developed a Python solution that represents an implementation of Crawford's evaluation based on satisfiability. For example, running the mentioned notebook and entering N=10 we get the following solution:
+[8, 2, 5, 1, 9, 4, 10, 7, 3, 6]
+
+Time (ss): 0.11
  
  ![GA_N10](solutions/GeneticAlgorithm_SolutionBoard_N=10.png "GA_N10")
 
