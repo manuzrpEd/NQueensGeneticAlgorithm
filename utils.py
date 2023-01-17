@@ -103,5 +103,5 @@ def show_results(res: list, duration: str, n: int, algo: str):
     #         plt.xticks(np.arange(1,l,1))
     #         plt.yticks(np.arange(1,l,1))
     plt.title(f'{algo} Solution for N={n}, {duration}')
-    plt.savefig(f'solutions/{algo}_SolutionBoard_N={n}.png')
+    plt.savefig(f'../solutions/{algo}_SolutionBoard_N={n}.png')
     plt.show()
