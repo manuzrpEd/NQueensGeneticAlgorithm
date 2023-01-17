@@ -1,4 +1,4 @@
-# N-Queens solution with a genetic algorithm
+# N-Queens solution with a Genetic Algorithm
  This repo implements the N Queen solution using a Genetic Algorithm and other global optimization algorithms.
  
  ## Motivation
