@@ -1,4 +1,4 @@
-# NQueensGeneticAlgorithm
+# n-queens solution with a genetic algorithm
  This repo implements the N Queen solution using a Genetic Algorithm and other global optimization algorithms.
  
 [Crawford (1992)](https://dl.acm.org/doi/10.1145/130069.130128) describes two ways that GA can be used to solve the n-queens problem for large values of n.
