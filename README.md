@@ -81,8 +81,58 @@ It's worth noting that the Minimum Conflicts Heuristic is a local search algorit
 
 On the other side, the Genetic Algorithm is a global search method, meaning that it is searching the solution space with a probability based approach. Therefore, it is more likely to find the global optimal solution. However, the convergence rate to optimal solutions is generally slower than local search methods like Minimum Conflicts Heuristic.
 
-In summary, while there isn't a direct comparison between Minimum Conflicts Heuristic and Genetic Algorithm for N-Queens problem in the literature, it is known that Genetic Algorithm is a global search method, while Minimum Conflicts Heuristic is a local search method, this fact can affect the performance of each algorithm on the N-Queens problem, and could be the reason why the Minimum Conflicts Heuristic is the best algorithm in terms of speed.
+In summary, while there isn't a direct comparison between Minimum Conflicts Heuristic and Genetic Algorithm for N-Queens problem in the literature, it is known that Genetic Algorithm is a global search method, while Minimum Conflicts Heuristic is a local search method, this fact can affect the performance of each algorithm on the N-Queens problem, and could be the reason why the Minimum Conflicts Heuristic is the best algorithm in terms of speed for our test cases.
 
  ## Coding Standards
  
  - We have tried to follow [PEP8](https://peps.python.org/pep-0008/) for Python whenever possible. For example:
+
+```
+# Define Genetic Chess Class
+class GeneticChess:
+    """
+    This class solves the N queen problem with a Genetic Algorithm solver.
+
+    Attributes:
+        n (int): The desired number of queens.
+        p (int): The population size.
+        printed_flag_shuffle (bool): A boolean to flag printing shuffle.
+    """
+
+    def __init__(self, n: int, p: int, printed_flag_shuffle: bool = False):
+        """
+        The constructor for the GeneticChess class.
+
+        Parameters:
+            n (int): The desired number of queens.
+            p (int): The population size.
+        """
+        assert type(n) == int, "n is not an integer!"
+        self.board = create_board(n)
+        self.solutions = []
+        self.size = n
+        self.population_size = p
+        self.env = []
+        self.goal = None
+        self.goalIndex = -1
+        self.printed_flag_shuffle = printed_flag_shuffle
+```
+
+```
+# entering the input from the command line
+if not args.dimension:
+    while True:
+        dimension = input("Enter board dimension (the desired number of queens): ")
+        try:
+            dimension = int(dimension)
+            if dimension < 4:
+                print("Error: Dimension should be an integer n>=4, try again!")
+            else:
+                break
+        except ValueError:
+            print("ValueError: Dimension must be an integer n>=4, try again!")
+else:
+    dimension = args.dimension
+```
+
+shows that we have used appropriate spacing for indentation, limiting lines to a maximum number of characters, using meaningful variable and function names, explaining functions, appropriate use of Python data structures, error checking, exception handling etc. Adhering to PEP 8 can make code more readable and consistent, and can help reduce the number of errors in code.
