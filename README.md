@@ -14,7 +14,7 @@ In the context of [NP](https://en.wikipedia.org/wiki/NP-completeness) problems, 
 
 [Crawford (1992)](https://dl.acm.org/doi/10.1145/130069.130128) reports experiments using five different values of n (100, 150, 200, 500 and 1000). For this exercise, I have limited my experimentation up to n = 100.
 
- ## Task
+ ## Task - Implementation
  
  In this [notebook](https://github.com/manuzrpEd/NQueensGeneticAlgorithm/blob/main/notebooks/Implementation_NQueen_GeneticAlgorithm-Solution.ipynb) I have developed a Python solution that represents an implementation of Crawford's evaluation based on satisfiability. For example, running the mentioned notebook and entering N=10 we get the following result:
  
