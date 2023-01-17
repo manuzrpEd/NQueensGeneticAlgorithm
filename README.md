@@ -24,4 +24,18 @@ Solution:
 Time (ss): 0.11
  
  ![GA_N10](solutions/GeneticAlgorithm_SolutionBoard_N=10.png "GA_N10")
+ 
+Our implementation of Crawford's satisfiability criterion is fast as it is proportional to O(n). We are able to reproduce the tests for different n-queen values, up to n=1000.
+
+Median execution time in seconds for Genetic Algorithm and dimension N:
+
+|   Dimension |   GeneticAlgorithm |
+|------------:|-------------------:|
+|           8 |          0.017515  |
+|          10 |          0.0931005 |
+|          20 |          0.323833  |
+|          30 |          1.37552   |
+|          50 |          8.01459   |
+|          70 |         28.5628    |
+|         100 |        113.254     |
 
