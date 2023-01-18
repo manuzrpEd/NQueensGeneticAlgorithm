@@ -1,5 +1,5 @@
 """
-This file defines a function to find a solution to the N Queen problem using the Line Beam Search algorithm.
+This file defines a function to find a solution to the N Queen problem using the Light Beam Search algorithm.
 It can be used from the command line.
 """
 
@@ -7,13 +7,15 @@ It can be used from the command line.
 import argparse
 import random
 import os
+import sys
+sys.path.insert(0,'..')
 #
 from time import time
 from utils import create_board, find_neighbours, num_attacks, set_board, show_results
 
 class State:
     """
-    This class contains information about the State for the LineBeamSearch algorithm.
+    This class contains information about the State for the LightBeamSearch algorithm.
 
     Attributes:
     state (list): The state of the proposed solution as a list.
@@ -85,7 +87,7 @@ def get_neighbours(state: State):
     return neighbours
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process N Queen LineBeamSearch Solver parameters.')
+    parser = argparse.ArgumentParser(description='Process N Queen LightBeamSearch Solver parameters.')
     parser.add_argument('-n', '--dimension', type=int,
                         help='The desired number of queens (dimension of the board).')
     args = parser.parse_args()
@@ -108,8 +110,8 @@ if __name__ == "__main__":
     else:
         dimension = args.dimension
 
-    # Solving N Queen problem with LineBeamSearch solver
-    print(f'\nSolving N={dimension} Queen problem with LineBeamSearch Solver...')
+    # Solving N Queen problem with LightBeamSearch solver
+    print(f'\nSolving N={dimension} Queen problem with LightBeamSearch Solver...')
     start = time()
     while True:
         solution = find_solution(dimension)

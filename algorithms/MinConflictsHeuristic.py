@@ -7,6 +7,8 @@ It can be used from the command line.
 import argparse
 import random
 import os
+import sys
+sys.path.insert(0,'..')
 #
 from time import time
 from utils import create_board, num_attacks, set_board, show_results

@@ -5,6 +5,8 @@ This file defines the Genetic Chess Class and finds a solution from the command 
 # import libraries
 import argparse
 import os
+import sys
+sys.path.insert(0,'..')
 #
 import matplotlib.pyplot as plt
 import numpy as np
