@@ -68,9 +68,29 @@ To reproduce the above tests, see this [notebook](https://github.com/manuzrpEd/N
  
  ![ExecutionTimeByAlgorithm](solutions/ExecutionTimeByAlgorithm.png "ExecutionTimeByAlgorithm")
  
+ Median execution time in seconds by Algorithm and dimension N:
+ 
+ |   Dimension |   GeneticAlgorithm |   LightBeamSearch |   MinConflictsHeuristic |   SimulatedAnnealing |   SteepestAscentHillClimb |
+|------------:|-------------------:|------------------:|------------------------:|---------------------:|--------------------------:|
+|           8 |          0.0307125 |          0.016939 |               0.000297  |             0.109616 |                 0.0057825 |
+|          10 |          0.212449  |          0.04757  |               0.001168  |             0.19949  |                 0.017409  |
+|          20 |          0.595207  |          0.691281 |               0.002958  |             1.21358  |                 0.341307  |
+|          50 |         14.7915    |         54.2408   |               0.0313975 |            21.9092   |                 7.85628   |
+|         100 |        121.564     |        259.252    |               0.147883  |           573.364    |                81.419
+ 
+ Average execution time in seconds by Algorithm and dimension N:
+ 
+ |   Dimension |   GeneticAlgorithm |   LightBeamSearch |   MinConflictsHeuristic |   SimulatedAnnealing |   SteepestAscentHillClimb |
+|------------:|-------------------:|------------------:|------------------------:|---------------------:|--------------------------:|
+|           8 |          0.0821836 |          0.02089  |               0.0003022 |             0.122465 |                 0.0127429 |
+|          10 |          0.217157  |          0.170879 |               0.0011047 |             0.208244 |                 0.0244876 |
+|          20 |          0.602861  |          1.69393  |               0.0054371 |             1.26016  |                 0.560277  |
+|          50 |         14.9798    |         90.9689   |               0.0301877 |            24.9242   |                11.469     |
+|         100 |        126.113     |        517.043    |               0.155363  |           746.871    |               150.384     |
+ 
  To reproduce the above tests, see this [notebook](notebooks/Improvement_OptimizationAlgorithms.ipynb).
  
- As we can observe, Minimum Conflicts Heuristic is the best algorithm for our test cases. It is quite remarkable how efficient it is, outperforming all other methods at each test case. Also, it is worth to highlight that the Genetic Algorithm is the second best method in terms of speed.
+ As we can observe, Minimum Conflicts Heuristic is the best algorithm for our test cases. It is quite remarkable how efficient it is, outperforming all other methods at each test case. Also, it is worth to highlight that the Genetic Algorithm does relatively well, being the the third best method in terms of speed.
  Nevertheless, these findings are of no surprise to the literature, since these optimization algorithms are widely popular and extensively studied. There are several research papers that have studied the application of the Minimum Conflicts Heuristic to the N-Queens problem. Some of them include:
  
     * "Solving the N-Queens Problem with the Min-Conflicts Heuristic" by Brian D. A. Rowley and David E. Culler (1991)
