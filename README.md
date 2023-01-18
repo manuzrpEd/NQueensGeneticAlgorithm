@@ -68,6 +68,8 @@ To reproduce the above tests, see this [notebook](https://github.com/manuzrpEd/N
  
  ![ExecutionTimeByAlgorithm](solutions/ExecutionTimeByAlgorithm.png "ExecutionTimeByAlgorithm")
  
+ To reproduce the above tests, see this [notebook](notebooks/Improvement_OptimizationAlgorithms.ipynb).
+ 
  As we can observe, Minimum Conflicts Heuristic is the best algorithm for our test cases. It is quite remarkable how efficient it is in terms of speed for our test cases. Also, Genetic Algorithm is the second best method in terms of speed.
  Nevertheless, these findings are of no surprise to the literature. There are several research papers that have studied the application of the Minimum Conflicts Heuristic to the N-Queens problem. Some of them include:
  
